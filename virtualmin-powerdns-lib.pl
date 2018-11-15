@@ -15,7 +15,7 @@ eval "use DBI;";
 return $@ if ($@);
 my ($dbh, $err);
 eval {
-	my $drh = DBI->install_driver("mysql");
+	my $drh = DBI->install_driver("Pg");
 	$dbh = $drh->connect("database=$config{'db'}".
 			     ($config{'host'} ? ";host=$config{'host'}" : ""),
 			     $config{'user'}, $config{'pass'}, { });

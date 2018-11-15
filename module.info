@@ -1,6 +1,6 @@
 desc=Virtualmin PowerDNS
 category=servers
-perldepends=DBI DBD::mysql
+perldepends=DBI DBD::Pg
 depends=virtual-server/2.40 1.420
 version=1.8
 feedback=jcameron@webmin.com
